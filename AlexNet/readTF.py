@@ -37,6 +37,7 @@ def read_and_decode(filename):#读入制作好的TFRecords文件
 
 
 img,label = read_and_decode('data.tfrecords')
+##随机打乱数据##
 img_batch, label_batch = tf.train.shuffle_batch([img, label], batch_size = 50, capacity = 2000, min_after_dequeue = 1000)
 
 init = tf.initialize_all_variables()

@@ -14,4 +14,7 @@ The data it used is MNIST.
   
 - createTF.py -
 Firstly, rename all the files within the numbers(0 ~ n).
-Secondly, create the .TFRecord file with the images used to train.
+Secondly, create the .TFRecords file with the images used to train.
+
+- readTF.py -
+How to read the .TFRecords file.
